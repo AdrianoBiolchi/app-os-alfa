@@ -1,0 +1,20 @@
+{
+    "name": "app-os",
+    "version": "1.0.0",
+    "description": "Back-end for integration with the Alfa Sistemas system.",
+    "main": "src/index.js",
+    "repository": "https://github.com/AdrianoBiolchi/app-os-alfa",
+    "author": "Adriano Biolchi",
+    "license": "MIT",
+    "scripts": {
+        "start": "node src/index.js",
+        "dev": "nodemon"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "morgan": "^1.10.0",
+        "node-firebird": "^0.9.3",
+        "nodemon": "^2.0.4",
+        "path": "^0.12.7"
+    }
+}
