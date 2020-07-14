@@ -10,6 +10,6 @@ options.user = "SYSDBA";
 options.password = "masterkey";
 options.lowercase_keys = false; // set to true to lowercase keys
 options.role = null; // default
-options.pageSize = 4096; // default when creating database
+options.pageSize = 8192; // default when creating database
 
 module.exports = options;

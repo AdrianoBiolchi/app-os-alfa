@@ -7,9 +7,17 @@ module.exports = {
 
       // db = DATABASE
       // INSERT BUFFER as BLOB
+
       db.query("SELECT NOME FROM c000007", function (err, result) {
         // IMPORTANT: close the connection
-        res.json(Array(result));
+        result.forEach(function (row) {
+          console.log(row, ab2str(row)); //id and name are fields from the select *
+        });
+
+        function ab2str(buf) {
+          return String.fromCharCode.apply(null, new Uint16Array(buf));
+        }
+        res.json(result);
         db.detach();
       });
     });
