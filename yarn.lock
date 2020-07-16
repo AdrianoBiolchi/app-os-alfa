@@ -1191,6 +1191,11 @@ widest-line@^3.1.0:
   dependencies:
     string-width "^4.0.0"
 
+windows-1252@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/windows-1252/-/windows-1252-1.0.0.tgz#721d9467d4da172d2b8dd2a56094b04355fe5976"
+  integrity sha1-ch2UZ9TaFy0rjdKlYJSwQ1X+WXY=
+
 wrappy@1:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/wrappy/-/wrappy-1.0.2.tgz#b5243d8f3ec1aa35f1364605bc0d1036e30ab69f"
