@@ -1,5 +1,5 @@
 const path = require("path");
-const database_os = path.resolve("./src/database/database.fdb");
+const database_os = path.resolve("./src/database/BASE_APP.FDB");
 
 var options = {};
 
@@ -10,6 +10,6 @@ options.user = "SYSDBA";
 options.password = "masterkey";
 options.lowercase_keys = false; // set to true to lowercase keys
 options.role = null; // default
-options.pageSize = 8192; // default when creating database
+options.pageSize = 0; // default when creating database
 
 module.exports = options;
