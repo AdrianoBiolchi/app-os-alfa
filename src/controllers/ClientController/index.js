@@ -6,18 +6,14 @@ const windows1252 = require("windows-1252");
 module.exports = {
   async index(req, res) {
     Firebird.attach(options, function (err, db) {
-
-      if (err)
-        throw err;
+      if (err) throw err;
 
       // db = DATABASE
-      db.sequentially('SELECT * FROM C000025 is not null', function (err, result) {
+      db.query("SELECT * FROM c000025", function (err, result) {
         // IMPORTANT: close the connection
         return res.json(result);
         db.detach();
-
       });
-
     });
-  }
+  },
 };
