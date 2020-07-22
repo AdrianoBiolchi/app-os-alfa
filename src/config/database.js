@@ -1,5 +1,5 @@
 const path = require("path");
-const database_os = path.resolve("./src/database/BASE_APP.FDB");
+const database_os = path.resolve("./src/database/BASE.FDB");
 
 var options = {};
 

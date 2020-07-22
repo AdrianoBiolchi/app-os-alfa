@@ -9,7 +9,7 @@ module.exports = {
       if (err) throw err;
 
       // db = DATABASE
-      db.query("SELECT * FROM c000025", function (err, result) {
+      db.query("SELECT CODIGO, NOME FROM  c000007", function (err, result) {
         // IMPORTANT: close the connection
         return res.json(result);
         db.detach();
