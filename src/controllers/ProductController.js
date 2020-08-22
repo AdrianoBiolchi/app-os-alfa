@@ -1,4 +1,4 @@
-const Firebird = require("node-firebird");
+const Firebird = require("node-firebird-data");
 const options = require("../config/database");
 
 module.exports = {

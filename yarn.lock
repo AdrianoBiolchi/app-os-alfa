@@ -681,10 +681,10 @@ latest-version@^5.0.0:
   dependencies:
     package-json "^6.3.0"
 
-long@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/long/-/long-4.0.0.tgz#9a7b71cfb7d361a194ea555241c92f7468d5bf28"
-  integrity sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==
+long@^2.2.5:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/long/-/long-2.4.0.tgz#9fa180bb1d9500cdc29c4156766a1995e1f4524f"
+  integrity sha1-n6GAux2VAM3CnEFWdmoZleH0Uk8=
 
 lowercase-keys@^1.0.0, lowercase-keys@^1.0.1:
   version "1.0.1"
@@ -783,12 +783,12 @@ negotiator@0.6.2:
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-0.6.2.tgz#feacf7ccf525a77ae9634436a64883ffeca346fb"
   integrity sha512-hZXc7K2e+PgeI1eDBe/10Ard4ekbfrrqG8Ep+8Jmf4JID2bNg7NvCPOZN+kfF574pFQI7mum2AUqDidoKqcTOw==
 
-node-firebird@^0.9.3:
-  version "0.9.3"
-  resolved "https://registry.yarnpkg.com/node-firebird/-/node-firebird-0.9.3.tgz#d8161c12dfbc8ef78e067cae83cb4ffecb06adff"
-  integrity sha512-ShKL/cKmUdSZG+6rFe/H6pn/DOwGxPfOfVjtK8MjT6PDYPGBzysezxoM8wrHFM9I/tOUqDySJqrsa13A0IHjKA==
+node-firebird-data@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/node-firebird-data/-/node-firebird-data-1.0.1.tgz#0d9f271708d2f04592ad5de413821779e889fd17"
+  integrity sha512-7Ts0Pvp22ttM+xty9A+gFBgX72CqI+6x3ECuoiiF+ac7QXtZ4WONRqglLvUON94TbWUne9xhjvNk2g9uH0gHKA==
   dependencies:
-    long "^4.0.0"
+    long "^2.2.5"
 
 nodemon@^2.0.4:
   version "2.0.4"
@@ -1215,11 +1215,6 @@ widest-line@^3.1.0:
   integrity sha512-NsmoXalsWVDMGupxZ5R08ka9flZjjiLvHVAWYOKtiKM8ujtZWr9cRffak+uSE48+Ob8ObalXpwyeUiyDD6QFgg==
   dependencies:
     string-width "^4.0.0"
-
-windows-1252@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/windows-1252/-/windows-1252-1.0.0.tgz#721d9467d4da172d2b8dd2a56094b04355fe5976"
-  integrity sha1-ch2UZ9TaFy0rjdKlYJSwQ1X+WXY=
 
 wrappy@1:
   version "1.0.2"
