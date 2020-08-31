@@ -1,18 +1,35 @@
-const Firebird = require('node-firebird-data');
-const options = require('../config/database');
+const Firebird = require("node-firebird-data");
+const options = require("../config/database");
 
 module.exports = {
   async index(req, res) {
     Firebird.attach(options, function (err, db) {
       if (err) throw err;
-      db.query('SELECT CODIGO, PRODUTO, ESTOQUE FROM c000025', function (
+      db.query("SELECT CODIGO, PRODUTO, ESTOQUE FROM c000025", function (
         err,
-        result,
+        result
       ) {
         // IMPORTANT: close the connection
         db.detach();
         return res.json(result);
       });
+    });
+  },
+
+  async show(req, res) {
+    const { id } = req.params;
+    Firebird.attach(options, function (err, db) {
+      if (err) throw err;
+      // db = DATABASE
+      db.query(
+        `SELECT CODIGO, PRODUTO, ESTOQUE FROM c000025 WHERE CODIGO = ${id}`,
+        function (err, result) {
+          // IMPORTANT: close the connection
+
+          db.detach();
+          return res.json(result);
+        }
+      );
     });
   },
 
@@ -27,9 +44,9 @@ module.exports = {
         function (err, result) {
           // IMPORTANT: close the connection
 
-          return res.json({ message: 'Produto atualizado com sucesso!' });
+          return res.json({ message: "Produto atualizado com sucesso!" });
           db.detach();
-        },
+        }
       );
     });
   },

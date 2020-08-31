@@ -22,6 +22,7 @@ routes.get("/clients", ClientController.index);
  * Routes for products
  */
 routes.get("/products", ProductController.index);
+routes.get("/products/:id", ProductController.show);
 routes.put("/products/:id", ProductController.update);
 
 /**
